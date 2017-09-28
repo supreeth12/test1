@@ -1,23 +1,25 @@
-#include<stdio.h>
-int main(){
-  int n,num,i;
-  int big;
-  
-  printf("Enter the values of n: ");
-  scanf("%d",&n);
+#include <stdio.h>
  
-  printf("Number %d",1);
-  scanf("%d",&big);
-
-  for(i=2;i<=n;i++){
-    printf("Number %d: ",i);
-    scanf("%d",&num);
-
-    if(big<num)
-      big=num;
-  }
-  
-  printf("Largest number is: %d",big);
-
-  return 0;
+void big()
+{
+    int num1, num2, num3;
+ 
+    printf("Enter the values of num1, num2 and num3\n");
+    scanf("%d %d %d", &num1, &num2, &num3);
+    printf("num1 = %d\tnum2 = %d\tnum3 = %d\n", num1, num2, num3);
+    if (num1 > num2)
+    {
+        if (num1 > num3)
+        {
+            printf("num1 is the greatest among three \n");
+        }
+        else
+        {
+            printf("num3 is the greatest among three \n");
+        }
+    }
+    else if (num2 > num3)
+        printf("num2 is the greatest among three \n");
+    else
+        printf("num3 is the greatest among three \n");
 }

@@ -2,7 +2,7 @@
  
 void big()
 {
-    int num1, num2, num3;
+    int num1=1, num2=3, num3=8;
  
     printf("Enter the values of num1, num2 and num3\n");
     scanf("%d %d %d", &num1, &num2, &num3);

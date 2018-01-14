@@ -10,3 +10,5 @@ reverse.o:reverse.c
 	gcc -c reverse.c
 clean:
 	rm -rf *.o ABC.exe
+	echo "all file deleted"
+	mkdir suppi
